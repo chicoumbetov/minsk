@@ -1,0 +1,13 @@
+export const Icon = styled.div`
+    color: #fff;
+    height: 30px;
+    display: flex;
+    align: right;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+    }
+`
