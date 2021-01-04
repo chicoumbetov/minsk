@@ -1,0 +1,72 @@
+#product{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.card{
+    min-width: 250px;
+    position: relative;
+    min-height: 350px;
+    width: 15%;
+    align-self: center;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 2px 8px 20px #ddd;
+    margin: 10px;
+    transition: 0.5s linear;
+}
+.content {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+  }
+.card:hover{
+    box-shadow: none;
+}
+.card img{
+    margin-top: 5px;
+    max-width: 300px;
+    width: 100%;
+    height: 40%;
+    max-height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.card h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+.card h3 a{
+    text-decoration: none;
+    color: #333;
+}
+.card h3 a:hover{
+    color: crimson;
+}
+.card span{
+    color: crimson;
+}
+.card p{
+    margin: 10px 0;
+}
+.card button{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #333;
+    color: white;
+    width: 120%;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.pricelinethrough {
+    text-decoration-line: line-through;
+}

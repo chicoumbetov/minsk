@@ -17,28 +17,9 @@ const Sidebar = ({ toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="krossovki" onClick={toggle}>
-                        кроссовки
-                    </SidebarLink>
-
-                    <SidebarLink to="muzhskie" onClick={toggle}>
-                        мужские
-                    </SidebarLink>
-
-                    <SidebarLink to="zhenskie" onClick={toggle}>
-                        женские
-                    </SidebarLink>
-
-                    <SidebarLink to="aksessuary" onClick={toggle}>
-                        аксессуары
-                    </SidebarLink>
-
-                    <SidebarLink to="shipping-and-payment" onClick={toggle}>
-                        доставка и оплата
-                    </SidebarLink>
-
-                    <SidebarLink to="blog" onClick={toggle}>
-                        блог
+                    
+                    <SidebarLink to="tovary" onClick={toggle}>
+                        товары
                     </SidebarLink>
 
                     <SidebarLink to="o-nas" onClick={toggle}>

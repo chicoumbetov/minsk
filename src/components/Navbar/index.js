@@ -19,23 +19,9 @@ const Navbar = ({toggle}) => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
+
                         <NavItem>
-                            <NavLinks to="krossovki">кроссовки</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="muzhskie">мужские</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="zhenskie">женские</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="aksessuary">аксессуары</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="shipping-and-payment">доставка и оплата</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="blog">блог</NavLinks>
+                            <NavLinks to="tovary">товары</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="o-nas">о нас</NavLinks>
