@@ -95,7 +95,6 @@ export class DataProvider extends Component {
                 "colors": ["orange", "black", "crimson", "teal"],
                 "count": 1
             }
-
         ],
         cart: [],
         total: 0

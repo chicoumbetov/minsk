@@ -12,7 +12,8 @@ export default class Products extends Component {
         const { products } = this.context;
 
         return (
-            <div className="block">
+            <div>
+                <h1 className="news">Новинки</h1>
                 <div id="product">
                     {
                         products.map(product => (
@@ -37,6 +38,8 @@ export default class Products extends Component {
                     }
                 </div>
             </div>
+                
+            
         )
     }
 }
