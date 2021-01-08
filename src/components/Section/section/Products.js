@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { DataContext } from '../../../Context/Context'
 import '../css/Products.css'
 //import '../css/normalize.css'
+import Header from '../../Header/Header'
+import Footer from '../../Footer/zapas2/index'
 
 export default class Products extends Component {
 
@@ -10,9 +12,10 @@ export default class Products extends Component {
 
     render() {
         const { products } = this.context;
-
+        const { cart } = this.context;
         return (
             <div>
+                <Header />
                 <h1 className="news">Новинки</h1>
                 <div id="product">
                     {
@@ -31,15 +34,16 @@ export default class Products extends Component {
                                     </div>
 
                                     <p>{product.price2} руб </p>
-                                    <button >Добавить в корзину</button>
+                                    <button onClick={() => this.context.addCart(product._id)} cart={cart.length}>Добавить в корзину</button>
                                 </div>
                             </div>
                         ))
                     }
                 </div>
+                <Footer />
             </div>
-                
-            
+
+
         )
     }
 }

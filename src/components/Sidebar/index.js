@@ -6,10 +6,10 @@ import {
     SidebarMenu,
     SidebarLink,
     SideBtnWrap,
-    SidebarRoute
+    SidebarRoute, Span
 } from './SidebarElements';
 
-const Sidebar = ({ toggle, isOpen}) => {
+const Sidebar = ({ toggle, isOpen, cart }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -17,7 +17,7 @@ const Sidebar = ({ toggle, isOpen}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    
+
                     <SidebarLink to="tovary" onClick={toggle}>
                         товары
                     </SidebarLink>
@@ -26,15 +26,16 @@ const Sidebar = ({ toggle, isOpen}) => {
                         о нас
                     </SidebarLink>
 
-                    <SidebarLink to="kontakty" onClick={toggle}>
+                    <SidebarLink to="/contact" onClick={toggle}>
                         контакты
                     </SidebarLink>
 
                 </SidebarMenu>
 
                 <SideBtnWrap>
-                    
+
                     <SidebarRoute to='/cart'>
+                        {/*<Span>{cart.length}</Span>*/}
                         <IconShop>
                             <RiShoppingCartLine />
                         </IconShop>

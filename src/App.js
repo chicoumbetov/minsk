@@ -2,7 +2,7 @@ import './App.css';
 //import Navbar from './components/Navbar/index';
 import { BrowserRouter as Router } from 'react-router-dom';
 //import Sidebar from './components/Sidebar';
-import Home from './pages';
+import Home from './pages/Home';
 import {DataProvider} from './Context/Context';
 
 function App() {

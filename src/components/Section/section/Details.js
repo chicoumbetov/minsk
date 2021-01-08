@@ -32,6 +32,7 @@ export default class Details extends Component {
         console.log(this.context.products)
 
         const { product } = this.state;
+        const {addCart} = this.context;
 
         return (
             <>
@@ -51,9 +52,11 @@ export default class Details extends Component {
 
                                     <p>{item.description}</p>
                                     <p>{item.content}</p>
-                                    <Link to="/cart" className="cart">
+                                    <Link to="/cart" className="cart"
+                                          onClick={() => addCart(item._id)}
+                                    >
                                         Add to cart
-                                </Link>
+                                    </Link>
                                 </div>
                             </div>
                         ))

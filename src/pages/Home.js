@@ -1,13 +1,12 @@
-import React, {useState} from 'react'
-//import { Header } from '../components/Header/Header'
+import React, { useState, useContext } from 'react'
 import { Section } from '../components/Section/Section'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import Header from '../components/Header/Header'
+import { DataContext } from '../Context/Context'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
-
+    const {cart} = useContext(DataContext);
     //change state from false to true & vice versa:
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -15,12 +14,11 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <Header/>
-            <Section/>
-            
+            <Sidebar isOpen={isOpen} toggle={toggle} cart={cart}/>
+            <Navbar toggle={toggle} cart={cart}/>
+            <Section />
         </>
+
     )
 }
 

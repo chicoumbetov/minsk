@@ -94,6 +94,21 @@ export const IconShop = styled.div`
     transition: all 0.2s ease-in-out;
 
     &:hover {
+        color: #01bf71;
         transition: all 0.2s ease-in-out;
     }
+`
+
+export const Span = styled.span`
+position: absolute;
+top: 22px;
+right: 28px;
+background: crimson;
+font-size: 10px;
+color: white;
+padding: 3px 5px;
+border-radius: 50%;
+z-index: -1;
+display: flex;
+justify-content: center;
 `

@@ -8,8 +8,9 @@ import { Nav, NavLinks,
     NavBtn, NavBtnLink
    } from './NavbarElements';
 import logo from "../../images/minsk.png";
+import './Navbar.css'
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, cart}) => {
     return (
         <>
             <Nav>
@@ -27,12 +28,13 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="o-nas">о нас</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="kontakty">контакты</NavLinks>
+                            <NavLinks to="/contact">контакты</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/cart">
-                            <Icon>
+                        <NavBtnLink to="/cart" >
+                            <span className="cart-quantity">{cart.length}</span>
+                            <Icon>    
                                 <RiShoppingCartLine />
                             </Icon>
                         </NavBtnLink>
