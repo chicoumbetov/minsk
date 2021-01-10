@@ -7,7 +7,7 @@ import { Nav, NavLinks,
     NavItem, MobileIcon, Icon,
     NavBtn, NavBtnLink
    } from './NavbarElements';
-import logo from "../../images/minsk.png";
+import logo from "../../images/runner-logo.JPG";
 import './Navbar.css'
 
 const Navbar = ({toggle, cart}) => {
@@ -15,7 +15,7 @@ const Navbar = ({toggle, cart}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">{<img src={logo} alt="logo"/>}</NavLogo>
+                    <NavLogo to="/">{<img src={logo} className="logo-image" alt="logo"/>}</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

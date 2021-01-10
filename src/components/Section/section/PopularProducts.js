@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../../../Context/Context'
 import '../css/Products.css'
-//import '../css/normalize.css'
-import Header from '../../Header/Header'
-import Footer from '../../Footer/zapas2/index'
-import PopularProducts from './PopularProducts';
-//import Filter from './Filter';
 
-export default class Products extends Component {
+export default class PopularProducts extends Component {
 
     static contextType = DataContext;
 
@@ -17,8 +12,8 @@ export default class Products extends Component {
         const { cart } = this.context;
         return (
             <div>
-                <Header />
-                <h1 className="news">Новинки</h1>             
+                <h1 className="news">Популярные</h1>
+                
                 <div id="product">
                     {
                         products.map(product => (
@@ -36,17 +31,12 @@ export default class Products extends Component {
                                     </div>
 
                                     <p>{product.price2} руб </p>
-                                    <div className="products-button" >
-                                        <button onClick={() => this.context.addCart(product._id)} cart={cart.length}>Добавить в корзину</button>
-                                    </div>      
+                                    <button onClick={() => this.context.addCart(product._id)} cart={cart.length}>Добавить в корзину</button>
                                 </div>
-                                
                             </div>
                         ))
                     }
                 </div>
-                <PopularProducts/>
-                <Footer />
             </div>
 
 

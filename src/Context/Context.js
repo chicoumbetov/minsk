@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-//import * as images from '../images/shoes/4/4.png'
+import React, { Component } from 'react';
+import image1 from '../images/shoes/1/1.png'
 
 export const DataContext = React.createContext();
 
@@ -10,7 +10,7 @@ export class DataProvider extends Component {
             {
                 "_id": "1",
                 "title": "Nike Shoes 01",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/1.png",
+                "src": './images/shoes/1/1.jpg',
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -21,7 +21,7 @@ export class DataProvider extends Component {
             {
                 "_id": "2",
                 "title": "Nike Shoes 02",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/2.png",
+                "src": "./images/shoes/4/4.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -32,7 +32,7 @@ export class DataProvider extends Component {
             {
                 "_id": "3",
                 "title": "Nike Shoes 03",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/3.png",
+                "src": "./images/shoes/3/3.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -43,7 +43,7 @@ export class DataProvider extends Component {
             {
                 "_id": "4",
                 "title": "Nike Shoes 04",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/4.png",
+                "src": "./images/shoes/4/4.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -54,7 +54,7 @@ export class DataProvider extends Component {
             {
                 "_id": "5",
                 "title": "Nike Shoes 05",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/5.png",
+                "src": "./images/shoes/5/5.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -65,7 +65,7 @@ export class DataProvider extends Component {
             {
                 "_id": "6",
                 "title": "Nike Shoes 06",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/6.png",
+                "src": "./images/shoes/6/6.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -76,7 +76,7 @@ export class DataProvider extends Component {
             {
                 "_id": "7",
                 "title": "Nike Shoes 07",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/1.png",
+                "src": "./images/shoes/3/3.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -87,7 +87,7 @@ export class DataProvider extends Component {
             {
                 "_id": "8",
                 "title": "Nike Shoes 08",
-                "src": "https://www.upsieutoc.com/images/2021/01/05/2.png",
+                "src": "./images/shoes/5/5.png",
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,

@@ -5,7 +5,12 @@
     background: crimson;
     font-size: 10px;
     color: white;
-    padding: 3px 5px;
+    padding: 3px 3px;
     border-radius: 50%;
     z-index: -1;
+}
+
+.logo-image{
+    width: 200px;
+    height: 40px;
 }

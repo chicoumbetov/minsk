@@ -1,18 +1,21 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { FaFacebook, FaInstagram,
-         FaYoutube, FaTwitter, FaLinkedin
-        } from 'react-icons/fa';
-import { FooterContainer,
-         FooterWrap, 
-         FooterLinksContainer,
-         FooterLinksWrapper,
-         FooterLinkItems,
-         FooterLinkTitle,
-         FooterLink, SocialMedia, SocialMediaWrap, 
-         SocialLogo, WebsiteRights, 
-         SocialIcon, SocialIconLink
+import {
+    FaFacebook, FaInstagram,
+    FaYoutube, FaLinkedin, FaTelegram
+} from 'react-icons/fa';
+import {
+    FooterContainer,
+    FooterWrap,
+    FooterLinksContainer,
+    FooterLinksWrapper,
+    FooterLinkItems,
+    FooterLinkTitle,
+    FooterLink, SocialMedia, SocialMediaWrap,
+    SocialLogo, WebsiteRights,
+    SocialIcon, SocialIconLink
 } from './FooterElements';
+import { BsChevronCompactUp } from "react-icons/bs";
 
 const Footer = () => {
     const toggleHome = () => {
@@ -22,18 +25,22 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
+            
+                    <div>
+                    <SocialLogo to='/' onClick={toggleHome}>
+                        <BsChevronCompactUp />
+                    </SocialLogo>
+                    </div>
                 <FooterLinksContainer>
+                    
                     
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>О нас</FooterLinkTitle>
                             <FooterLink to="/">
-                                How it works
+                                О нас
                             </FooterLink>
-                            
-                            <FooterLink to="/">
-                                Terms of Service
-                            </FooterLink>
+
                         </FooterLinkItems>
 
                         <FooterLinkItems>
@@ -44,7 +51,7 @@ const Footer = () => {
                             <FooterLink to="/">
                                 Поддержка
                             </FooterLink>
-                            
+
                             <FooterLink to="/">
                                 Спонсорство
                             </FooterLink>
@@ -52,7 +59,7 @@ const Footer = () => {
                     </FooterLinksWrapper>
 
                     <FooterLinksWrapper>
-                            
+
                         <FooterLinkItems>
                             <FooterLinkTitle>Социальные сети</FooterLinkTitle>
                             <FooterLink to="/">
@@ -71,30 +78,29 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/' onClick={toggleHome}>
-                            logo
-                        </SocialLogo>
-                        <WebsiteRights>logo ⓒ {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+
+                        <WebsiteRights>ⓒ {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcon>
                             <SocialIconLink href="/" target="_blank"
-                                            area-labels="Facebook">
-                                            <FaFacebook/>
+                                area-labels="Facebook">
+                                <FaFacebook />
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank"
-                                            area-labels="Instagram">
-                                            <FaInstagram/>
+                                area-labels="Instagram">
+                                <FaInstagram />
+
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank"
-                                            area-labels="Youtube">
-                                            <FaYoutube/>
+                                area-labels="Youtube">
+                                <FaYoutube />
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank"
-                                            area-labels="Twitter">
-                                            <FaTwitter/>
+                                area-labels="Telegram">
+                                <FaTelegram />
                             </SocialIconLink>
                             <SocialIconLink href="/" target="_blank"
-                                            area-labels="Linkedin">
-                                            <FaLinkedin/>
+                                area-labels="Linkedin">
+                                <FaLinkedin />
                             </SocialIconLink>
                         </SocialIcon>
                     </SocialMediaWrap>
