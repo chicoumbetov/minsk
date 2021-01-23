@@ -32,8 +32,7 @@ const Footer = () => {
                     </SocialLogo>
                     </div>
                 <FooterLinksContainer>
-                    
-                    
+
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>О нас</FooterLinkTitle>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars} from 'react-icons/fa';
 import { RiShoppingCartLine } from 'react-icons/ri';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Nav, NavLinks,
     NavbarContainer, 
     NavLogo, NavMenu, 
@@ -31,18 +32,29 @@ const Navbar = ({toggle, cart}) => {
                             <NavLinks to="/contact">контакты</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
+                    
+                </NavbarContainer>
+                <NavBtn>
                         <NavBtnLink to="/cart" >
-                            <span className="cart-quantity">{cart.length}</span>
+                            
                             <Icon>    
                                 <RiShoppingCartLine />
                             </Icon>
                         </NavBtnLink>
+
+                        <NavBtnLink to="/login" >
+                            <span className="login-quantity"></span>
+                            <Icon>    
+                                <BsFillPersonLinesFill />
+                            </Icon>
+                        </NavBtnLink>
                     </NavBtn>
-                </NavbarContainer>
             </Nav>
         </>
     )
 }
 
 export default Navbar
+
+/* <NavBtnLink to="/cart" >
+<span className="cart-quantity">{cart.length}</span>*/

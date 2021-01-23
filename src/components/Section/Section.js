@@ -4,6 +4,7 @@ import Details from './section/Details'
 import Contact from './section/Contacts'
 import { Route } from 'react-router-dom'
 import Cart from './section/Cart'
+import Login from './section/Login'
 import Payment from './section/Payment'
 
 export class Section extends Component {
@@ -17,6 +18,7 @@ export class Section extends Component {
                 <Route path="/product/:id" component={Details} exact />
                 <Route path="/contact" component={Contact} exact />
                 <Route path="/cart" component={Cart} exact />
+                <Route path="/login" component={Login} exact />
                 <Route path="/payment" component={Payment} exact />
             </section>
         )

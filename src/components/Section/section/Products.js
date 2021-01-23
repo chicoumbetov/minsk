@@ -23,6 +23,10 @@ export default class Products extends Component {
                     {
                         products.map(product => (
                             <div className="card" key={product._id}>
+                                <div className="discount">
+                                    <span >-15%</span>
+                                </div>
+                                
                                 <Link to={`/product/${product._id}`}>
                                     <img src={product.src} alt="" />
                                 </Link>

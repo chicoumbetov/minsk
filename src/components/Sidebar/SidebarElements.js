@@ -74,6 +74,7 @@ export const SideBtnWrap = styled.div`
 export const SidebarRoute = styled(LinkR)`
     
     outline: none;
+    margin-left: 20px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

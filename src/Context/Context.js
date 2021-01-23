@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import image1 from '../images/shoes/1/1.png'
 
 export const DataContext = React.createContext();
 

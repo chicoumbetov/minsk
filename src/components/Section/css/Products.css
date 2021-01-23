@@ -91,5 +91,15 @@
 .products-button button{
     display: flex;
     justify-content: center;
-    align-self: center;
+}
+.discount{
+    display: flex;
+    justify-content: flex-end;
+}
+.discount span{
+    color: black;
+    padding: 7px 2px;
+    background-color: #FFAA48;
+    border: 1px solid #FFAA48;
+    border-radius: 50px;
 }

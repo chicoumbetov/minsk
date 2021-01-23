@@ -21,12 +21,12 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+/*  justify-content: space-between; */
     height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    
 `
 
 export const NavLogo = styled(LinkR)`
@@ -93,7 +93,7 @@ export const NavBtn = styled.nav`
     display: flex;
     height: 50px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     align-items: center;
 
     @media screen and (max-width: 760px) {
@@ -103,6 +103,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
     outline: none;
+    margin-left: 20px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

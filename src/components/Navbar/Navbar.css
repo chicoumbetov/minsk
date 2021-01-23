@@ -1,3 +1,4 @@
+/*
 .cart-quantity{
     position: absolute;
     top: 22px;
@@ -8,9 +9,23 @@
     padding: 3px 3px;
     border-radius: 50%;
     z-index: -1;
-}
+}*/
 
 .logo-image{
     width: 200px;
     height: 40px;
 }
+/*
+.login-quantity{
+    position: absolute;
+    margin-left: 10px;
+    top: 22px;
+    right: 28px;
+    background: crimson;
+    font-size: 10px;
+    color: white;
+    padding: 3px 3px;
+    border-radius: 50%;
+    z-index: -1;
+}
+*/

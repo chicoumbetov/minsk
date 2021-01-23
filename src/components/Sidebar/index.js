@@ -1,5 +1,6 @@
 import React from 'react';
 import { RiShoppingCartLine } from 'react-icons/ri';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 import {
     SidebarContainer, Icon, IconShop,
     CloseIcon, SidebarWrapper,
@@ -40,6 +41,15 @@ const Sidebar = ({ toggle, isOpen, cart }) => {
                             <RiShoppingCartLine />
                         </IconShop>
                     </SidebarRoute>
+
+                    <SidebarRoute to='/login'>
+                        {/*<Span>{cart.length}</Span>*/}
+                        <IconShop>
+                            <BsFillPersonLinesFill />
+                        </IconShop>
+                    </SidebarRoute>
+
+
                 </SideBtnWrap>
 
             </SidebarWrapper>
