@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/minsk/static/css/main.9382f5d8.chunk.css",
+    "main.js": "/minsk/static/js/main.ad04f2b1.chunk.js",
+    "main.js.map": "/minsk/static/js/main.ad04f2b1.chunk.js.map",
+    "runtime-main.js": "/minsk/static/js/runtime-main.b48a4f43.js",
+    "runtime-main.js.map": "/minsk/static/js/runtime-main.b48a4f43.js.map",
+    "static/js/2.e2847514.chunk.js": "/minsk/static/js/2.e2847514.chunk.js",
+    "static/js/2.e2847514.chunk.js.map": "/minsk/static/js/2.e2847514.chunk.js.map",
+    "index.html": "/minsk/index.html",
+    "static/css/main.9382f5d8.chunk.css.map": "/minsk/static/css/main.9382f5d8.chunk.css.map",
+    "static/js/2.e2847514.chunk.js.LICENSE.txt": "/minsk/static/js/2.e2847514.chunk.js.LICENSE.txt",
+    "static/media/runner-logo.98e38e02.JPG": "/minsk/static/media/runner-logo.98e38e02.JPG",
+    "static/media/video1.a2703484.mp4": "/minsk/static/media/video1.a2703484.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b48a4f43.js",
+    "static/js/2.e2847514.chunk.js",
+    "static/css/main.9382f5d8.chunk.css",
+    "static/js/main.ad04f2b1.chunk.js"
+  ]
+}
