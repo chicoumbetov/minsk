@@ -32,9 +32,12 @@ export const Input = styled.input`
     width: 100%;
     height: 42px;
     outline: none;
-    border: 1px solid rgba(200, 200, 200, 0.0.3);
+    border: 1px solid rgba(15, 15, 15, 0.28);
+    
     padding: 0px 10px;
-    border-bottom: 1.4px solid transparent;
+    margin-top: 5px;
+    transition: all 200ms ease-in-out;
+    font-size: 13px;
 
     &::placeholder {
         color: rgba(200, 200, 200, 1);

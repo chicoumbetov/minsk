@@ -28,7 +28,7 @@ export const TopContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 1cm;
+    padding: 0 1.8em;
     padding-bottom: 2cm;
 `
 
@@ -72,4 +72,12 @@ export const SmallText = styled.h5`
         font-size: 11px;
         z-index: 10;
         margin: 0;
+        margin-top: 7px;
+`
+
+export const InnerContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8em;
 `
