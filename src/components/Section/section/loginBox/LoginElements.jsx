@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const LoginContainer = styled.div`
     width: 100%;
@@ -32,9 +33,9 @@ export const TopContainer = styled.div`
     padding-bottom: 2cm;
 `
 
-export const BackDrop = styled.div`
+export const BackDrop = styled(motion.div)`
     width: 160%;
-    height: 550px;
+    height: 500px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -81,3 +82,24 @@ export const InnerContainer = styled.div`
     flex-direction: column;
     padding: 0 1.8em;
 `
+
+export const backdropVariants = {
+    expanded: {
+        width: "223%",
+        height: "1050px",
+        borderRadius: "20%",
+        transform: "rotate(60deg)"
+    },
+    collapsed: {
+        width: "160%",
+        height: "550px",
+        borderRadius: "50%",
+        transform: "rotate(60deg)"
+    }
+}
+
+export const expandingTransition = {
+    type: "spring",
+    duration: 2.3,
+    stiffness: 30,
+}

@@ -10,7 +10,6 @@ class LoginForm extends Component {
             <BoxContainer>
                 <FormContainer>
                     <Input type="email" placeholder="Email адрес"/>
-                    <Input type="tel" placeholder="Телефон"/>
                     <Input type="password" placeholder="Введите пароль"/>
                     
                 </FormContainer>

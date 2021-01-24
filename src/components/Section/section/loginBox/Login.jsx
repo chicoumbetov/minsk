@@ -1,37 +1,55 @@
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 //import { DataContext } from "../../../Context/Context"
 //import '../css/Login.css'
 import LoginForm from './LoginForm.jsx'
-import { 
-    BackDrop, TopContainer, BoxContainer, 
+import {
+    BackDrop, TopContainer, BoxContainer,
     LoginContainer, HeaderContainer, HeaderText, SmallText,
-    InnerContainer 
+    InnerContainer, backdropVariants, expandingTransition
 } from './LoginElements.jsx'
 
 
 
-export default class Login extends Component {
+const Login = (props) => {
+    const [isExpanded, setExpanded] = useState(false);
 
-    render() {
-        return (
-            <LoginContainer>
-                <BoxContainer>
-                    <TopContainer>
-                        <BackDrop />
-                        <HeaderContainer>
-                            <HeaderText>Welcome</HeaderText>
-                            <HeaderText>Back</HeaderText>
-                            <SmallText>Пожалуйста зарегистрируйтесь чтобы продолжить</SmallText>
-                        </HeaderContainer>
-                    </TopContainer>
-                    <InnerContainer>
-                        <LoginForm/>
-                    </InnerContainer>
-                </BoxContainer>
-            </LoginContainer>
-
-        )
+    const playExpandingAnimation = () => {
+        setExpanded(true);
+        setTimeout(() => {
+            setExpanded(false);
+        }, expandingTransition.duration * 1000 - 1500)
     }
+
+    return (
+        <LoginContainer>
+            <BoxContainer>
+                <TopContainer>
+
+                    {/* animation when switching b/n signin & signup*/}
+                    <BackDrop 
+                        initial={false} 
+                        animate={isExpanded ? "expanded" : "collapsed"} 
+                        variants={backdropVariants}
+                        transition={expandingTransition}
+                    />
+                    
+                    <HeaderContainer  >
+                        <HeaderText>Welcome</HeaderText>
+                        <HeaderText>Back</HeaderText>
+                        <SmallText>Пожалуйста авторизуйтесь, чтобы продолжить</SmallText>
+                    </HeaderContainer>
+
+                </TopContainer>
+                <InnerContainer>
+                    <LoginForm />
+                    <p onClick={playExpandingAnimation} >Нажмите сюда</p>
+                </InnerContainer>
+            </BoxContainer>
+        </LoginContainer>
+
+    )
 
 
 }
+
+export default Login;
