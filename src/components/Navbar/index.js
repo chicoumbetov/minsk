@@ -16,7 +16,7 @@ const Navbar = ({toggle, cart}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">{<img src={logo} className="logo-image" alt="logo"/>}</NavLogo>
+                    <NavLogo to="/product">{<img src={logo} className="logo-image" alt="logo"/>}</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
