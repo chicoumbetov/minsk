@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React, {useContext} from 'react';
 import { BoldLink, BoxContainer, FormContainer, 
     Input, MutedLink, SubmitButton 
 } from './common.jsx';
 import { Marginer } from '../marginer/index';
+import { AccountContext } from './accountContext.js';
 
-class SignupForm extends Component {
-    render() {
+const SignupForm = (props) => {
+
+    const { switchToSignin } = useContext(AccountContext)
+
+    
         return (
             <BoxContainer>
                 <FormContainer>
@@ -15,17 +19,20 @@ class SignupForm extends Component {
                     
                 </FormContainer>
                 <Marginer direction="vertical" margin={5} />
+                
+                {/*   Optional
                 <MutedLink href="#">Забыли пароль?</MutedLink>
                 <Marginer direction="vertical" margin="l.6em" />
+                */}
                 
-                <SubmitButton type="submit">Signin</SubmitButton>
+                <SubmitButton type="submit">Зарегистрироваться</SubmitButton>
                 <Marginer direction="vertical" margin="lem" />
                 <MutedLink href="#">
-                    Нету аккаунта? <BoldLink href="#">Signup</BoldLink> 
+                    Уже есть аккаунт? <BoldLink href="#" onClick={switchToSignin}>Авторизоваться</BoldLink> 
                 </MutedLink>
             </BoxContainer>
         )
-    }
+    
     
 }
 

@@ -26,6 +26,7 @@ export const BoldLink = styled.a`
     color: rgb(241, 196, 15);
     font-weight: 500;
     text-decoration: none;
+    margin: 0 4px;
 `;
 
 export const Input = styled.input`
@@ -55,7 +56,7 @@ export const Input = styled.input`
 
 export const SubmitButton = styled.button`
     width: 100%;
-    padding: 11px 40%;
+    padding: 11px 10%;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
