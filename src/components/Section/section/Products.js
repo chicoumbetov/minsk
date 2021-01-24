@@ -18,17 +18,16 @@ export default class Products extends Component {
         return (
             <div>
                 <Header />
-                <h1 className="news">Новинки</h1>             
+                <h1 className="news">Новинки</h1>
+                
                 <div id="product">
                     {
                         products.map(product => (
                             <div className="card" key={product._id}>
-                                <div className="discount">
-                                    <span >-15%</span>
-                                </div>
                                 
-                                <Link to={`/product/${product._id}`}>
-                                    <img src={product.src} alt="" />
+                                <Link to={`/product/${product._id}`} className="first">
+                                    <img src={product.src} alt="shoe" />
+                                    <span className="discount" class="overlay">-15%</span>
                                 </Link>
                                 <div className="content" >
                                     <h3>
@@ -48,7 +47,8 @@ export default class Products extends Component {
                             </div>
                         ))
                     }
-                </div>
+                </div>  
+                
                 <PopularProducts/>
                 <Footer />
             </div>

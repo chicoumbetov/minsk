@@ -9,7 +9,7 @@ export class DataProvider extends Component {
             {
                 "_id": "1",
                 "title": "Nike Shoes 01",
-                "src": './images/shoes/1/1.jpg',
+                "src": require('../images/shoes/1/1.jpg').default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -20,7 +20,7 @@ export class DataProvider extends Component {
             {
                 "_id": "2",
                 "title": "Nike Shoes 02",
-                "src": "./images/shoes/4/4.png",
+                "src": require("../images/shoes/4/4.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -31,7 +31,7 @@ export class DataProvider extends Component {
             {
                 "_id": "3",
                 "title": "Nike Shoes 03",
-                "src": "./images/shoes/3/3.png",
+                "src": require("../images/shoes/3/3.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -42,7 +42,7 @@ export class DataProvider extends Component {
             {
                 "_id": "4",
                 "title": "Nike Shoes 04",
-                "src": "./images/shoes/4/4.png",
+                "src": require("../images/shoes/4/4.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -53,7 +53,7 @@ export class DataProvider extends Component {
             {
                 "_id": "5",
                 "title": "Nike Shoes 05",
-                "src": "./images/shoes/5/5.png",
+                "src": require("../images/shoes/5/5.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -64,7 +64,7 @@ export class DataProvider extends Component {
             {
                 "_id": "6",
                 "title": "Nike Shoes 06",
-                "src": "./images/shoes/6/6.png",
+                "src": require("../images/shoes/6/6.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -75,7 +75,7 @@ export class DataProvider extends Component {
             {
                 "_id": "7",
                 "title": "Nike Shoes 07",
-                "src": "./images/shoes/3/3.png",
+                "src": require("../images/shoes/3/3.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
@@ -86,7 +86,7 @@ export class DataProvider extends Component {
             {
                 "_id": "8",
                 "title": "Nike Shoes 08",
-                "src": "./images/shoes/5/5.png",
+                "src": require("../images/shoes/5/5.png").default,
                 "description": "Description of shoes",
                 "content": "Content of shoes",
                 "price": 150,
