@@ -96,6 +96,7 @@
 }
 
 /* Discount span css*/
+
 .first {
     position: relative;
 }
@@ -110,6 +111,6 @@
     border: 1px solid #FFAA48;
     left: -50%;
     
-    top: -50%;
-    z-index: 100;
+    top: -10%;
+    z-index: 1;
 }
