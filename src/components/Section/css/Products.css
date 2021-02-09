@@ -20,7 +20,9 @@
     margin-top: 30px;
     min-width: 200px;
     min-height: 390px;
+
     position: relative;
+
     align-self: center;
     border: 1px solid #eee;
     border-radius: 10px;
@@ -103,14 +105,15 @@
 
 .card .first span {
     position: absolute;
+
     color: black;
     padding: 1px 2px;
     margin: 10px;
     border-radius: 50px;
     background-color: #FFAA48;
     border: 1px solid #FFAA48;
-    left: -50%;
+    left: 0px;
     
-    top: -10%;
+    top: 0px;
     z-index: 1;
 }
